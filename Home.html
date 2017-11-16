@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head> <!--API - HomePage-->
+    <link rel="stylesheet" href="style.css"> <!-- Style Sheet-->
+</head>
+
+<body><center>
+
+<h1></u> <!--Phorest Logo-->
+    <img src="photo1.gif" alt="logo"style="width:70px;height:70px;"> PHOREST SALON SOFTWARE
+    <br></br>
+    <h2>
+        <center>Salon App Editor</center>
+    </h2>
+    <h3> <!--Main Image-->
+        <img src="photo4.jpg" alt="logo"style="width:800px;height:500px;">
+    </h3>
+</h1>    
+    <h2> <!--Form Section Starts Here -->
+    <br></br>
+    Create Your Own Salon App For IOS & Android
+    <br></br>
+    <img src="photo2.jpg" alt="logo"style="width:250px;height:250px;">
+    <br></br>
+    <b>Search Client Card:</b><center>
+            <br></br>
+    <main>
+            <title>Client Search</title> <!--Client Search Form-->
+            
+            <script> //Validate Client email / phone
+            function ValidateClientForm()
+            {
+                var email = document.ClientForm.Email;
+                var phone = document.ClientForm.Phone;
+                
+                if (email.value == "text")
+                { //Input Client Email
+                    window.alert("Please enter a valid e-mail address."); 
+                    email.focus();
+                    return true;
+                }
+              
+                if ((nocall.checked == true) && (phone.value == "text"))
+                { //Input Client Phone
+                    window.alert("Please enter a valid phone number."); 
+                    phone.focus();
+                    return true;
+                } 
+            
+                return true;
+            } 
+            </script>
+            <!--GET Form (Go to clients.html)-->
+            <form method="GET" action="file:///C:/Users/admin/Desktop/Client.html" 
+            name="ClientForm" onsubmit="return ValidateClientForm();">
+                <p>E-mail Address:  <input type="text" size="65" name="Email"></p>
+                <p>Phone Number: <input type="text" size="65" name="Phone"><br>
+                <p><input type="submit" value="Search" name="Search">
+                <input type="reset" value="Reset" name="Reset"></p>
+            </form>
+    </main>
+    <br></br>
+    </h2>
+</center>
+</body>
+</html>
